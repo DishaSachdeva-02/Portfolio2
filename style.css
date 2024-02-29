@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(6, 6, 66);
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav{
+    width:100%;
+    height:10%;
+    position :fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(6, 6, 49);
+    padding:0 100px;
+    
+    font-weight: 800;
+    font-size: 20px;
+    top:0;
+}
+.rside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+}
+.rside a:hover{
+    font-size: 25px;
+    color: rgb(50, 138, 220);
+}
+.main{
+    margin-top:64px;
+    display: flex;
+    width: 100%;
+    height:560px;
+    
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+ 
+}
+.button{
+    width:130px;
+    height:30px;
+    border-radius: 15px;
+    background-color: rgb(50, 138, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    box-shadow: 20px 20px 150px 16px rgba(50,138, 220, 0.9);
+}
+.pic{
+    height:400px;
+    border-radius: 50%;
+    box-shadow: 30px 30px 70px 16px rgba(0, 0, 0, 0.7);
+}
+.pic:hover{
+    box-shadow: 20px 20px 150px 16px rgba(50,138, 220, 0.9);
+}
+.text{
+    font-size: 35px;
+}
+.text1{
+    font-size: 45px;
+    font-family:sans-serif;
+}
+.me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap:15px;
+}
+.about{
+    width:100%;
+    height:500px;
+   
+    display: flex;
+    justify-content: space-around;
+    
+}
+h2{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:35px;
+    text-decoration: underline;
+    
+}
+h2:hover{
+    color: rgb(50, 138, 220);
+    font-size: 40px;
+}
+.des{
+   
+   padding: 20px;
+   width:50%;
+   
+}
+.des .info{
+   line-height:31px;
+}
+.edu{
+    
+    padding :20px;
+    width:50%;
+    
+}
+.info{
+   margin:20px;
+   line-height:28px;
+   font-size: 20px;
+   padding:18px;
+}
+.info:hover{
+    box-shadow: 20px 20px 150px 16px  rgb(50, 138, 220,0.7);
+    color: rgb(122, 181, 237);
+}
+.skills{
+    width:100%;
+    height:300px;
+}
+.project{
+    width:100%;
+    height:400px;
+
+}
+.contact{
+    width:100%;
+    height:200px;
+}
+.sub{
+    height:200px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.images{
+    height:80px;
+    width:80px;
+    box-shadow: 10px 12px 8px 1px rgba(0, 0, 0, 0.3);
+}
+.images:hover{
+    height:100px ;
+    width:100px;
+    box-shadow: 20px 24px 18px 10px rgba(0, 0, 0, 0.5);
+}
+.pro{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.contact .pro{
+    margin:15px;
+}
+.card {
+    background-color: rgb(50, 138, 220);
+    box-shadow: 20px 24px 18px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    width:300px;
+    height:250px;
+  }
+  
+  
+  .card:hover {
+    box-shadow: 0px 5px 18px 10px rgba(30, 139, 255, 0.5);
+  }
+  
+  .cimg{
+    width:300px;
+    height:200px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 16px;
+    color: black;
+  }
+  .logos{
+    height:40px;
+    width:40px;
+  }
+  .logos:hover{
+    height: 50px;
+    width:50px;
+  }
+  @media screen and (width>=1000px){
+    .rside{
+        font-size:15px ;
+    }
+    .about{
+        height: 630px;
+    }
+  }
+  @media screen and (1000px>width>200px){
+    .rside{
+        flex-wrap: wrap;
+        font-size:15px ;
+        row-gap: 10px;
+        width:98%;
+    }
+    .lside{
+        width:2%;
+        visibility: hidden;
+    }
+    .nav{
+        height:15%;
+    }
+    .about{
+        height:1000px;
+        flex-direction:column;
+        width: 100%;
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+    .project{
+        height:1000px ;
+    }
+    .project .pro{
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .contact .pro{
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .sub{
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    .main{
+        flex-direction: column;
+        row-gap: 50px;
+        height:700px ;
+        justify-content: center;
+        align-items: center;
+        margin-top:200px;
+    }
+    
+    .info{
+       width:380px;
+       justify-content: center;
+       align-items: center;
+    }
+  }
+  
